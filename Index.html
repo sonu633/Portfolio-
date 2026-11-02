@@ -1,1 +1,153 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sonu Kumar | Data Analytics Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <a href="#home" class="logo">SK<span>.</span></a>
+    <button class="menu-toggle" id="menuToggle">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <p class="subtitle">HEX SOFTWARES PROJECT SHOWCASE</p>
+    <h1>Data Analytics<br><span>Portfolio</span></h1>
+    <p>
+      Exploring data through Excel, Power BI and Python.
+      Three projects focused on business insights,
+      employee analytics and student performance.
+    </p>
+    <a href="#projects" class="btn">Explore Projects ↓</a>
+  </div>
+  <div class="hero-box">
+    <div class="floating-card card1">01<br><b>Sales Analytics</b></div>
+    <div class="floating-card card2">02<br><b>HR Analytics</b></div>
+    <div class="floating-card card3">03<br><b>Student Analysis</b></div>
+  </div>
+</section>
+
+<section class="projects" id="projects">
+  <div class="section-title">
+    <p class="subtitle">MY WORK</p>
+    <h2>Featured Projects</h2>
+    <p>Three analytics projects assigned by Hex Softwares.</p>
+  </div>
+
+  <div class="project-container">
+
+    <div class="project-card">
+      <div class="project-image sales">
+        <span>PROJECT 01</span>
+        <h2>Sales Dashboard</h2>
+      </div>
+      <div class="project-content">
+        <h3>Sales Dashboard Analysis</h3>
+        <p>
+          Analyze revenue, profit, customer trends,
+          product performance and regional sales patterns.
+          Create an interactive dashboard to support
+          data-driven business decisions.
+        </p>
+        <div class="tags">
+          <span>Excel</span>
+          <span>Power BI</span>
+          <span>Dashboard</span>
+        </div>
+        <button onclick="showDetails('sales')">View Details →</button>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-image hr">
+        <span>PROJECT 02</span>
+        <h2>HR Analytics</h2>
+      </div>
+      <div class="project-content">
+        <h3>Employee Attrition Analysis</h3>
+        <p>
+          Analyze employee turnover using attrition count,
+          attrition rate, average salary and employee
+          distribution by department, age group and job role.
+        </p>
+        <div class="tags">
+          <span>Power BI</span>
+          <span>HR Analytics</span>
+          <span>Visualization</span>
+        </div>
+        <button onclick="showDetails('hr')">View Details →</button>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-image student">
+        <span>PROJECT 03</span>
+        <h2>Student Analysis</h2>
+      </div>
+      <div class="project-content">
+        <h3>Student Performance Analysis</h3>
+        <p>
+          Analyze student scores, attendance, study time
+          and subject-wise performance to identify
+          academic trends and improvement areas.
+        </p>
+        <div class="tags">
+          <span>Excel</span>
+          <span>Power BI</span>
+          <span>Python</span>
+        </div>
+        <button onclick="showDetails('student')">View Details →</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div>
+    <p class="subtitle">ABOUT ME</p>
+    <h2>Turning Data Into<br><span>Meaningful Insights</span></h2>
+  </div>
+  <div>
+    <p>
+      I am an aspiring Data Analyst and B.Tech Computer
+      Science student interested in data analysis,
+      business intelligence and data visualization.
+      This portfolio showcases three analytics project briefs.
+    </p>
+    <p><b>Technical Skills:</b> Python, SQL, Excel, Power BI, Pandas and NumPy.</p>
+  </div>
+</section>
+
+<footer>
+  <h3>Sonu Kumar</h3>
+  <p>Data Analytics Portfolio | Hex Softwares Projects</p>
+  <p>© 2026 All Rights Reserved.</p>
+</footer>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <button class="close" onclick="closeDetails()">×</button>
+    <h2 id="modalTitle"></h2>
+    <p id="modalDescription"></p>
+    <h3>Analysis Focus</h3>
+    <ul id="modalPoints"></ul>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+  </html>
+  
